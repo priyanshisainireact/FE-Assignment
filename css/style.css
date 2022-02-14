@@ -1,0 +1,356 @@
+/* Font Include */
+@font-face {
+  font-family: Cabin-Regular;
+  src: url(font/Cabin-Regular.otf);
+}
+@font-face {
+  font-family: Lato-Light;
+  src: url(font/Lato-Light.ttf);
+}
+@font-face {
+  font-family: Lato-Bold;
+  src: url(font/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url(font/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: MyriadHebrew-Regular;
+  src: url(font/Raleway-Regular.ttf);
+}
+/* Common css */
+.col-sm-4 {
+    width: 33.33%;
+    padding: 5px;
+}
+.col-sm-6 {
+    width: 50%;
+    
+}
+.col-sm-8 {
+    width: 66.67% ;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+        margin: 30px 0px 0px;
+}
+p {
+    font-size: 12px;
+    padding: 0px;
+    text-align: left;
+}
+.main-title {
+  color: #000000;
+  font-size: 48px;
+  font-family: Cabin-Regular;
+  margin-bottom: 30px;
+}
+.justify {
+  margin: 20px 24px 20px 0px;
+}
+.white {
+  color: #fff;
+}
+.fa {
+    color: #0d8ac8;
+    font-size: 20px;
+}
+
+/* Header css */
+.navbarbg {
+  color: #fff;
+}
+.navbar-toggler {
+    color: #fff;
+    border: none;
+}
+.user-profile .fa-user {
+    color: #fff;
+    font-size: 22px;
+}
+.menu-icon {
+    font-size: 20px;
+    color: #4b4b4b;
+    padding-right: 20px;
+}
+/* Banner css */
+
+.banner {
+  background-image: url(../images/background-image.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.overlay {
+  background: #525151db;
+}
+.btn-banner {
+  background: #ffffff;
+  border-radius: 5px;
+  color: #9c0d0d;
+  border: 1px solid #9c0d0d;
+  padding: 16px 22px 23px 21px;
+  text-transform: uppercase;
+  height: 57px;
+  margin: 61px 0px;
+  font-family: Lato-Bold;
+}
+form {
+    background: #fff;
+}
+.search-text {
+    border: none;
+}
+.fa-search {
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+}
+  .banner-footer {
+    color: #fff;
+    text-align: end;
+    padding: 40px 0px 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.banner-heading.white {
+    font-size: 19px;
+    font-family: Cabin-Regular, AdobeInvisFont, MyriadHebrew-Regular;
+    padding: 87px 0 40px;
+    text-align: center;
+}
+
+/* Service Css */
+#home-services {
+    background: #6767670f;
+    margin: 0;
+}
+.service-container {
+  text-align: center;
+}
+
+.service-card {
+    background: #fff;
+    padding: 10px 0px;
+   
+}
+.service-name {
+  font-size: 10px;
+  font-family: Lato-Bold, MyriadHebrew-Regular;
+  padding-top: 5px;
+  text-transform: uppercase;
+      margin: 0px;
+}
+.service-container .fa {
+    font-size: 20px;
+}
+a.nav-link {
+    color: #ee9f51;
+}
+.nav.nav-pills {
+    margin: auto;
+        padding-bottom: 12px;
+}
+.nav-item {
+    background: #fff;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+.fa.fa-graduation-cap {
+    font-size: 35px;
+    margin-top: 30px;
+    float: right;
+    color: #000000;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #eda051;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+.tab-content {
+    text-align: center;
+}
+.tab-content .row {
+    padding-top: 10px;
+}
+@media only screen and (max-width: 767px) {
+  
+  .img-responsive {
+    margin-top: 0%;
+  }
+}
+/* mobile nav */
+.user {
+    background: #34405f;
+    padding: 10px 0px;
+}
+.mob-nav .nav-item {
+    margin: 0px;
+    padding:0px 12px;
+}
+.mob-nav .nav-link {
+   color: #4b4b4b !important;
+}
+.new {
+    color: #ff9800;
+    font-size: 11px;
+    font-weight: 800;
+    position: absolute;
+    padding: 0px 0px 0px 10px;
+}
+.fa-angle-right {
+    float: right;
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+}
+/* Slider */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Modal */
+.modal-backdrop.fade.show {
+    position: relative;
+}
+.modal-dialog {
+    margin: 0px;
+    border-top: 5px solid #000;
+}
+.modal-content {
+    height: 100vh;
+    background: #dfe8ea;
+}
+.modal-header {
+    border: none;
+}
+.close {
+    font-size: 30px;
+}
+.modal-heading {
+    padding: 20px 0px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #124b57;
+}
+.facebook {
+    background-color: #1877f2;
+    height: 44px;
+    border: none;
+    width: 100%;
+    color: #fff;
+    border-radius: 4px;
+}
+.google {
+    background-color: #de271b;
+    height: 44px;
+    border: none;
+    width: 100%;
+    color: #fff;
+    margin: 13px 0px;
+    border-radius: 4px;
+}
+.fa-facebook,.fa-google-plus {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    padding-right: 5px;
+}
+.btn-secondary {
+    width: 100%;
+    color: #124b57;
+    background: #fff;
+    border: none;
+}
+/* college slider */
+#college-slider {
+    background: #f6f6f6;
+    margin-top: 20px;
+}
+.carousel-caption img {
+    height: 40px !important;
+}
+.carousel-caption {
+    text-align: left;
+    left: 5%;
+    bottom: 12%;
+}
+.college-title {
+    margin: 0px;
+    font-size: 14px;
+}
+.card-title {
+    font-size: 13px;
+    font-weight: 700;
+}
+.card-body {
+    padding: 12px;
+}
+.btn {
+    float: right;
+    color: #0d8ac8;
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.btn-secondary {
+    height: 41px;
+    font-weight: 700;
+}
+.card-title {
+    font-size: 13px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+/* Responsive*/
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+  .user {
+    display: none;
+}
+ .user-profile {
+   display: none;
+}
+.mob-nav .nav-link {
+    font-size: 12px;
+}
+}
+@media (max-width: 450px) {
+ .user-profile {
+    margin-right: -17%;
+}
+#banner {
+    padding: 0px;
+    max-width: 80%;
+}
+}

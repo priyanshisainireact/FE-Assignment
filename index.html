@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Collge </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <!--Bootstrap  Css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+      <div class="container">
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--User profile-->
+        <div class="user-profile">
+          <i class="fa fa-user" data-toggle="modal" data-target="#myModal"></i>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+              </div>
+              <div class="modal-body text-center">
+                <div class="banner-icon">
+                  <img src="images/boy-23714_1280.png" alt="banner-icon" height="100">
+                </div>
+                <div class="banner-heading modal-heading">
+                  Log in or sign up
+                </div>
+                <button type="button" class="facebook"><i class="fa fa-facebook"></i>Continue with facebook</button>
+                <button type="button" class="google"><i class="fa fa-google-plus"></i>Continue with google</button>
+                <p class="text-center">Or, use your email address</p>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <button type="button" class="btn btn-secondary">Log In</button>
+                  </div>
+                  <div class="col-sm-6">
+                    <button type="button" class="btn btn-secondary">Sign Up</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div class="user text-center">
+            <img src="images/user-menu.png" alt="user" height="100">
+            <h4 class="white">Hi, Guest !</h4>
+          </div>
+          <ul class="navbar-nav ml-auto mob-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-home menu-icon"></i>HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="	fa fa-building-o menu-icon"></i>college <i
+                  class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="	fa fa-file-excel-o menu-icon"></i>Exams<i
+                  class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-pencil-square-o menu-icon"></i>Write a review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="	fa fa-file-word-o menu-icon"></i>courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-flag menu-icon"></i>cutoff</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="	fa fa-mortar-board menu-icon"></i>admission 2018</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="	fa fa-tasks menu-icon"></i>news</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="	fa fa-spinner menu-icon"></i>reviwes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="	fa fa-square-o menu-icon"></i>top coupons <span
+                  class="new">NEW</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user menu-icon"></i>login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Banner-->
+  <div class="banner">
+    <div class="overlay">
+      <div class="container">
+        <div class="banner-text">
+
+          <div class="banner-heading white">
+            <div class="banner-icon">
+              <img src="images/boy-23714_1280.png" alt="banner-icon" height="100">
+            </div>
+
+            Find every college,exam and course at one place
+          </div>
+          <form action="/action_page.php">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search.." name="search" class="search-text">
+
+          </form>
+          <div class="banner-footer">
+            shiv nadar University, Noida
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Services-->
+  <section id="home-services">
+    <div class="container service-container">
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-building"></i>
+            </div>
+            <div class="service-box">
+              <h3 class="service-name">find college</h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-file"></i>
+            </div>
+            <div class="service-box">
+              <h3 class="service-name">explore exams</h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-pencil"></i>
+            </div>
+            <div class="service-box">
+              <h3 class="service-name">get latest news</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-clipboard"></i>
+            </div>
+            <div class="service-box">
+              <h3 class="service-name">top reviwes</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="f	fa fa-columns"></i>
+            </div>
+            <div class="service-box">
+              <h3 class="service-name">top courses</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-file-image-o"></i>
+            </div>
+            <div class="service-box">
+              <h3 class="service-name">get admission</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-pie-chart"></i>
+            </div>
+            <div class="service-box">
+              <h3 class="service-name">rank predictor</h3>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="	fa fa-minus-square"></i>
+            </div>
+            <div class="service-box">
+              <h3 class="service-name">cut off</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa fa-spinner"></i>
+            </div>
+            <div class="service-box">
+              <h3 class="service-name">write a review</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Explore your future</h3>
+          <p>Select for college or exam</p>
+        </div>
+        <div class="col-sm-6">
+          <i class="fa fa-graduation-cap"></i>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="nav nav-pills" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#home"> colleges </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#menu1"> Exams</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </section>
+  <section id="tab-contents">
+    <div class="container">
+      <div class="tab-content">
+        <div id="home" class="container tab-pane"><br>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-pie-chart"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">management <br>5720 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-superpowers"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Engineering<br> 4502 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-user-md"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Medical<br> 1435 colleges</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-gear"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Agriculture<br> 629 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-area-chart"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Architecture<br> 479 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-pencil"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Arts<br> 4045 colleges</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-fighter-jet"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Aviation<br> 124 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-file-archive-o"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Commerce<br> 3684 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-stethoscope"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">dental<br> 381 colleges</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-adjust"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Design<br> 643 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-american-sign-language-interpreting"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Education<br> 2672 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-anchor"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Law<br> 958 colleges</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-flash"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Paramedical<br> 929 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-filter"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Pharmacy<br> 1049 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-flask"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">science<br> 4660 colleges</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-laptop"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Computer<br> Application<br> 3764 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-location-arrow"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Mass<br> Communication <br>1159 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-lightbulb-o"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Veterinary<br> Sciences <br>93 colleges </h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-bank"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Hotel management<br> 684 colleges</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-barcode"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Vocational <br>courses <br>613 colleges</h3>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="menu1" class="container tab-pane fade active show"><br>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-pie-chart"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">management <br>81 exams </h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-superpowers"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Engineering<br> 130 exams </h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-user-md"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Medical<br> 27 exams</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-gear"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Agriculture<br> 16 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-area-chart"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Architecture<br> 28 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-pencil"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Arts<br> 38 exams</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-fighter-jet"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Aviation<br> 0 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-file-archive-o"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Commerce<br> 32 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-stethoscope"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">dental<br> 15 exams</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-adjust"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Design<br> 21 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-american-sign-language-interpreting"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Education<br> 35 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-anchor"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Law<br> 50 exams</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-flash"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Paramedical<br> 12 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-filter"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Pharmacy<br> 45 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-flask"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">science<br> 72 exams</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-laptop"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Computer<br> Application<br> 52 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-location-arrow"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Mass<br> Communication <br>5 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="fa fa-lightbulb-o"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Veterinary<br> Sciences <br>10 exams </h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-bank"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Hotel management<br>11 exams</h3>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-icon">
+                <i class="	fa fa-barcode"></i>
+              </div>
+              <div class="service-box">
+                <h3 class="service-name">Vocational <br>courses <br>5 exams</h3>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--College Slider-->
+  <section id="college-slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <h3>Top featured colleges</h3>
+          <p>Top colleges cheiry picked for you</p>
+        </div>
+        <div class="col-sm-4">
+          <i class="fa fa-graduation-cap"></i>
+        </div>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="images/college.jpeg" class="card-img-top" alt="college-image">
+                <div class="carousel-caption">
+                  <img src="images/college-logo.jpeg" alt="logo">
+                  <p class="college-title">Arch College of Design and Business </p>
+                  <p class="college-address">jaipur, rajasthan</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UG certificate in...</h5>
+                  <a href="#" class="btn">View all courses & Fees</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="images/college.jpeg" class="card-img-top" alt="college-image">
+                <div class="carousel-caption">
+                  <img src="images/college-logo.jpeg" alt="logo">
+                  <p class="college-title">Arch College of Design and Business </p>
+                  <p class="college-address">jaipur, rajasthan</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UG certificate in...</h5>
+                  <a href="#" class="btn">View all courses & Fees</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="images/college.jpeg" class="card-img-top" alt="college-image">
+                <div class="carousel-caption">
+                  <img src="images/college-logo.jpeg" alt="logo">
+                  <p class="college-title">Arch College of Design and Business </p>
+                  <p class="college-address">jaipur, rajasthan</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UG certificate in...</h5>
+                  <a href="#" class="btn">View all courses & Fees</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="images/college.jpeg" class="card-img-top" alt="college-image">
+                <div class="carousel-caption">
+                  <img src="images/college-logo.jpeg" alt="logo">
+                  <p class="college-title">Arch College of Design and Business </p>
+                  <p class="college-address">jaipur, rajasthan</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UG certificate in...</h5>
+                  <a href="#" class="btn">View all courses & Fees</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="images/college.jpeg" class="card-img-top" alt="college-image">
+                <div class="carousel-caption">
+                  <img src="images/college-logo.jpeg" alt="logo">
+                  <p class="college-title">Arch College of Design and Business </p>
+                  <p class="college-address">jaipur, rajasthan</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UG certificate in...</h5>
+                  <a href="#" class="btn">View all courses & Fees</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="images/college.jpeg" class="card-img-top" alt="college-image">
+                <div class="carousel-caption">
+                  <img src="images/college-logo.jpeg" alt="logo">
+                  <p class="college-title">Arch College of Design and Business </p>
+                  <p class="college-address">jaipur, rajasthan</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UG certificate in...</h5>
+                  <a href="#" class="btn">View all courses & Fees</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="images/college.jpeg" class="card-img-top" alt="college-image">
+                <div class="carousel-caption">
+                  <img src="images/college-logo.jpeg" alt="logo">
+                  <p class="college-title">Arch College of Design and Business </p>
+                  <p class="college-address">jaipur, rajasthan</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UG certificate in...</h5>
+                  <a href="#" class="btn">View all courses & Fees</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="images/college.jpeg" class="card-img-top" alt="college-image">
+                <div class="carousel-caption">
+                  <img src="images/college-logo.jpeg" alt="logo">
+                  <p class="college-title">Arch College of Design and Business </p>
+                  <p class="college-address">jaipur, rajasthan</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UG certificate in...</h5>
+                  <a href="#" class="btn">View all courses & Fees</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="images/college.jpeg" class="card-img-top" alt="college-image">
+                <div class="carousel-caption">
+                  <img src="images/college-logo.jpeg" alt="logo">
+                  <p class="college-title">Arch College of Design and Business </p>
+                  <p class="college-address">jaipur, rajasthan</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">UG certificate in...</h5>
+                  <a href="#" class="btn">View all courses & Fees</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
