@@ -91,17 +91,6 @@ p {
 .overlay {
   background: #525151db;
 }
-.btn-banner {
-  background: #ffffff;
-  border-radius: 5px;
-  color: #9c0d0d;
-  border: 1px solid #9c0d0d;
-  padding: 16px 22px 23px 21px;
-  text-transform: uppercase;
-  height: 57px;
-  margin: 61px 0px;
-  font-family: Lato-Bold;
-}
 form {
     background: #fff;
 }
@@ -180,12 +169,6 @@ a.nav-link {
 }
 .tab-content .row {
     padding-top: 10px;
-}
-@media only screen and (max-width: 767px) {
-  
-  .img-responsive {
-    margin-top: 0%;
-  }
 }
 /* mobile nav */
 .user {
